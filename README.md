@@ -5,4 +5,9 @@ You need to run the program as administrator because you can't view or edit Regi
 Visual Studio Community Edition is supposed to be free and yet it works only for 30 days and then asks you to create an account and to be honest I am kind of lazy and hate sharing my e-mail and details. 
 So after a little search in the internet, I found the necessary registry key to edit and how to edited.
 ## Requirements
-You will need to link the Crypt32.lib as I needed the `CryptProtectData` and `CryptUnprotectData` functions (you may also need to add the Crypt32.dll found in System32 folder)
+You will need to link the Crypt32.lib as I needed the `CryptProtectData` and `CryptUnprotectData` functions (you may also need to add the Crypt32.dll found in System32 folder).
+
+## TODO
+* make the program ask for high privelege
+* display an error message in case of lack of priveleges
+* maybe in the far future make a scheduled task to run once evry 2 weeks to reset the 30 days trial.
